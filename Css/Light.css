@@ -1,0 +1,191 @@
+@import url("carrossel.css");
+@import url("reset.css");
+
+@media (max-width: 600px) {
+    .facet_sidebar {
+      display: none;
+    }
+}
+
+/* Para ocultar a barra de rolagem */
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --AzulTec: #2196F3; /* Linha Azul Menu */
+    --Cinza-antracite: #1C1C1C; /* Texto */
+    --branco-off-white: #FAF9F6; /* Cor Texto */
+    --branco-gelo: #E8E8E8; /* Cabeçalho e Menu */
+    --preto-suave: #333333;  /* Cor Texto */ 
+    --branco: #fff; 
+    --preto: #121212;     
+}
+
+/* Modo escuro */
+body.dark-mode {
+    --AzulTec: #1A237E; 
+    --Cinza-antracite: #E8E8E8;
+    --branco-off-white: #333333;
+    --branco-gelo: #1C1C1C;
+    --preto-suave: #FAF9F6;
+    --branco: #121212; 
+    --preto: #fff;    
+}
+
+* /* seletor universal */ {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Young Serif", serif;
+}
+
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: bla;
+}
+
+body {
+    height: 1000vh;
+    background-color: var(--branco-off-white);
+    color: var(--Cinza-antracite);
+    overflow: scroll;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav.menu-lateral {
+    width: 70px;
+    height: 100%;
+    background-color: var(--branco-gelo);
+    padding: 20px 0px 20px 7px;
+    box-shadow: 5px 0px 0px var(--AzulTec);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    transition: 1.2s;
+}
+
+nav.menu-lateral.expandir {
+    width: 330px;
+}
+
+.menu-lateral {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.menu-lateral i {
+    color: var(--preto-suave);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav div.expansor {
+    max-width: 43px;
+    height: auto;
+    filter: sepia(100%) hue-rotate(360deg);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+nav div.expansor:hover {
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
+    transition: .5s;
+}
+
+ul{
+    height: 100%;
+}
+
+ul li.item-menu {
+    transition: .3s;
+}
+
+ul li.ativo{
+    background-color: var(--AzulTec);
+}
+
+ul li.item-menu:hover {
+    background-color: var(--AzulTec);
+}
+
+ul li.item-menu a {
+    color: var(--preto-suave);
+    font-size: 20px;
+    padding: 20px 14%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 67px;
+    transition: 1.3s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 20px;
+    opacity: 100%;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+}
+
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+}
+
+.cabeçalho {
+    color: var(--Cinza-antracite);
+    font-size: 26px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+    font-family: "Young Serif", serif;
+    text-align: center;
+    padding: 1em;
+    background-color: var(--branco-gelo);
+}
+
+h1 {
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 50px;
+    text-align: justify;
+    font-family: "Cormorant Garamond", serif;
+    padding: 3em;
+}
+
+.banner {
+    background-color: var(--AzulTec);
+    padding: 1em;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.banner__texto {
+    color: var(--Cinza-antracite);
+    margin: 1em 0;
+}
+
+.corpo__apresentação {
+    display: flex;
+    padding: 50px;
+}
+
+.swiper-slide {
+    position: absolute;
+}
+
+.componentes_curriculares{
+    background-color: var(--AzulTec);
+}

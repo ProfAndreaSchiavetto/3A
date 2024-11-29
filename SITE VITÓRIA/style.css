@@ -1,0 +1,30 @@
+body {Color: white;
+    background: rgb(255, 229, 198);
+   margin: 0px ;
+   font-family: "Handjet", sans-serif;
+}
+   
+
+    header {border:solid 2px black;
+             padding: 20px;
+             font-size: larger;
+             color: black;
+            }
+       section { background: rgb(192, 40, 40);
+        padding-bottom: 80px;
+        padding-top: 80px;
+        display: flex;
+        justify-content: center;
+       }
+
+       .chamada-texto {
+        margin-right:  5%;
+     }
+
+     h1 {
+        font-size: 40px;
+     }
+
+     p {
+        font-size: 25px;
+     }

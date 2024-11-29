@@ -1,0 +1,37 @@
+@import url("carrossel.css");
+@import url("reset.css");
+
+@media (max-width: 600px) {
+    .facet_sidebar {
+      display: none;
+    }
+}
+
+:root {
+    --AzulTec: #2196F3; /* Linha Azul Menu */
+    --Cinza-antracite: #1C1C1C; /* Texto */
+    --branco-off-white: #FAF9F6; /* Cor Texto */
+    --branco-gelo: #E8E8E8; /* Cabeçalho e Menu */
+    --preto-suave: #333333;  /* Cor Texto */       
+}
+
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+/* Tema claro (padrão) */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+  
+/* Tema escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+  

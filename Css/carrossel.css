@@ -1,0 +1,271 @@
+@import url(Allcores.css);
+
+@media (max-width: 600px) {
+    .facet_sidebar {
+      display: none;
+    }
+}
+:root {
+    --AzulTec: #2196F3; /* Linha Azul Menu */
+    --Cinza-antracite: #1C1C1C; /* Texto */
+    --branco-off-white: #FAF9F6; /* Cor Texto */
+    --branco-gelo: #E8E8E8; /* Cabeçalho e Menu */
+    --preto-suave: #333333;  /* Cor Texto */ 
+    --branco: #fff; 
+    --preto: #000;     
+}
+
+.carrossel__titulo {
+    color: var(--roxo);
+    background-color: var(--branco);
+    text-align: center;
+    padding: 1em 0 0.5em 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+} 
+
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descrição {
+    padding-left: 130px;
+    padding-right: 50px;
+    padding: 2em;
+    font-size: x-large
+}
+.tec_rob {
+    width: 300px;
+    border-radius: 100%;
+    text-decoration: none;
+    text-align: justify;
+    font-family: "Teko", serif;
+     
+}
+
+.descrição_componentes {
+    padding: 1em;
+    text-align: center;
+    color: black;
+
+}
+.descrição__imagem {
+    width: 110px;
+    height: 110px;
+}
+
+.card {
+    background: var(--branco);
+    box-shadow: 0px 4px 4px black;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+}
+
+
+
+.descrição__titulo {
+    color: var(--roxo);
+    font-weight: 1000;
+    font-family: "Bona Nova SC", serif;
+
+}
+
+.descrição__titulo-livro {
+    color: black;
+    font-family: "Caveat", cursive;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0.5em 0;
+}
+
+.descrição__texto {
+    font-family: "Bona Nova SC", serif;
+    font-size: 14px;
+}
+
+.botões__item {
+    margin: 0 0.5em
+}
+
+.botões__ancora {
+    background-color: var(--roxo);
+    padding: 1em 1.4em;
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 700;
+
+} 
+
+.componentes_curriculares {
+    background-color: var(--AzulTec);
+    text-align: center;
+    margin: 2em;
+    padding-inline-start: 0%;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.grupos {
+    display: flex;
+    text-align: justify;
+    padding-inline-start: 0%;
+    margin: 2em;
+    padding: 2em;
+    padding-left: 80px;
+
+   
+}
+
+.grupos_biotec {
+    
+    text-align: justify;
+    padding-inline-start: 0%;
+    margin: 2em;
+    padding: 2em;
+    padding-left: 80px;
+
+   
+}
+.histórias {
+    padding: 1em;
+    width: 30em;
+}
+
+.vídeo_seduc {
+    text-align: justify;
+    width: 30em;
+  
+
+    padding-left: 280px;
+}
+.histórias_emp {
+    padding: 1em;
+    width: 60em;
+    font-size: xx-large;
+    
+}
+
+.nomes_grupo {
+    background-color: var(--AzulTec);
+    text-align: center;
+    margin: 0 2em 1em 2em;
+    padding: 2em;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.img_emp {
+    background-color: var(--AzulTec);
+    text-align: center;
+    margin: 0 2em 1em 2em;
+    padding: 2em;
+    border-radius: 10px;
+    width: 20em;
+
+}
+
+
+.logo {
+    background-color: var(--AzulTec);
+    text-align: center;
+    margin: 0 2em 1em 2em;
+    padding: 2em;
+    border-radius: 10px;
+    width: 15em;
+}
+
+.projetos {
+    background-color: var(--AzulTec);
+    text-align: center;
+    margin: 0 2em 1em 2em;
+    padding: 2em;
+    border-radius: 10px;
+    width: 20em;
+
+}
+.lista_componentes {
+    display: flex;
+    padding-left: 100px;
+}
+
+/* Seção que contém os componentes */
+.lista_componentes {
+    display: flex;             /* Flexbox para alinhar os itens */
+    justify-content: center;   /* Centraliza os itens horizontalmente */
+    gap: 20px;                 /* Espaçamento entre os itens */
+    padding: 20px;
+    flex-wrap: wrap;           /* Permite que os itens se movam para a linha seguinte se necessário */
+}
+
+/* Estilo de cada item (link) */
+.lista_componentes a {
+    display: flex;             /* Flexbox dentro dos links */
+    flex-direction: column;    /* Coloca a imagem e o texto em uma coluna */
+    align-items: center;       /* Centraliza a imagem e o texto dentro de cada item */
+    width: 300px;              /* Largura de cada item */
+    text-align: center;        /* Garante que o texto esteja centralizado */
+    background-color: var(--branco);    /* Cor de fundo para cada item */
+    padding: 15px;
+    border-radius: 3px;        /* Cantos arredondados */
+}
+
+
+/* Estilo para as imagens */
+.tec_rob {
+    max-width: 100%;           /* Garante que a imagem seja responsiva */
+    height: auto;              /* Mantém a proporção da imagem */
+    margin-bottom: 15px;       /* Espaçamento entre a imagem e o texto */
+}
+
+/* Estilo para o texto */
+.componentes_curriculares {
+    font-size: 14px;           /* Tamanho do texto */
+    color: var(--Cinza-antracite);               /* Cor do texto */
+    line-height: 1.5;          /* Espaçamento entre as linhas */
+    margin: 0;
+}
+
+/* Estilo geral do container */
+.grupos2 {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens uniformemente */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    gap: 20px; /* Espaço entre os grupos */
+    padding: 20px;
+}
+
+/* Cada grupo */
+.grupo {
+    text-align: center; /* Centraliza texto e imagem */
+}
+
+/* Imagens dos projetos */
+.grupo img {
+    width: 250px; /* Largura fixa para as imagens */
+    height: auto; /* Mantém proporção */
+    border-radius: 10px; /* Bordas levemente arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Texto do grupo */
+.histórias {
+    font-family: 'Arial', sans-serif; /* Fonte legível */
+    font-size: 16px; /* Tamanho moderado */
+    color: var(--Cinza-antracite); /* Cor escura */
+    margin-top: 10px; /* Espaçamento superior */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: var(--branco); /* Fundo levemente claro */
+}
